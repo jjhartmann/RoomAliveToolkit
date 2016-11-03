@@ -25,7 +25,7 @@ namespace RoomAliveToolkit.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool ThreeDObjectEnabled {
             get {
                 return ((bool)(this["ThreeDObjectEnabled"]));
@@ -37,7 +37,7 @@ namespace RoomAliveToolkit.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool WobbleEffectEnabled {
             get {
                 return ((bool)(this["WobbleEffectEnabled"]));
@@ -61,7 +61,7 @@ namespace RoomAliveToolkit.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool LiveDepthEnabled {
             get {
                 return ((bool)(this["LiveDepthEnabled"]));
@@ -73,7 +73,7 @@ namespace RoomAliveToolkit.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool FullScreenEnabled {
             get {
                 return ((bool)(this["FullScreenEnabled"]));
