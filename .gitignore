@@ -195,3 +195,4 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 ProCamCalibration/ProCamEnsembleCalibration.VC.db
+ProCamCalibration/ProCamEnsembleCalibration.VC.VC.opendb
