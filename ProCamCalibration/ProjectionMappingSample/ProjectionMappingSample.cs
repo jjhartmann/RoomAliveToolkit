@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using Microsoft.Kinect;
 using System.Runtime.InteropServices;
 
+
+// TODO: Create and modify code for use in SAR setup
 namespace RoomAliveToolkit
 {
     public class ProjectionMappingSample : ApplicationContext
