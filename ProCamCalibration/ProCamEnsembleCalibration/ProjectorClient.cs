@@ -165,7 +165,12 @@ public partial class ProjectorServerClient : System.ServiceModel.ClientBase<Proj
     {
         base.Channel.DisplayGrayCode(screenIndex, i);
     }
-    
+
+    public void DisplayColorImage(int screenIndex, byte[] data)
+    {
+        base.Channel.DisplayColorImage(screenIndex, data);
+    }
+
     public System.Threading.Tasks.Task DisplayGrayCodeAsync(int screenIndex, int i)
     {
         return base.Channel.DisplayGrayCodeAsync(screenIndex, i);
