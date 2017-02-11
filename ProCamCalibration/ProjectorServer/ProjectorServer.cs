@@ -88,6 +88,14 @@ namespace RoomAliveToolkit
                 projectorForms.Remove(screenIndex);
             }
         }
+
+        [OperationContract]
+        public void DisplayColorImage(int screenIndex, byte[] data)
+        {
+            var projectorForm = projectorForms[screenIndex];
+            
+
+        }
     }
 
 

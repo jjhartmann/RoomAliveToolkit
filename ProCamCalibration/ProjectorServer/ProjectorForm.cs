@@ -96,6 +96,15 @@ namespace RoomAliveToolkit
             //Console.WriteLine("displaying Gray code " + i);
         }
         
+        public void DisplayColorImage(byte[] data)
+        {
+            bitmap.CopyFromMemory(data, this.Width * 4);
+            renderTarget.BeginDraw();
+            renderTarget.DrawBitmap(bitmap, 1.0f, BitmapInterpolationMode.Linear);
+            renderTarget.EndDraw();
+
+        }
+
         public void DisplayName(string name)
         {
             var brush = new SolidColorBrush(renderTarget, Color4.White);
@@ -135,6 +144,7 @@ namespace RoomAliveToolkit
 
             brush.Dispose();
         }
+
 
         public void SetColor(float r, float g, float b)
         {
