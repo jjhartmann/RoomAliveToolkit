@@ -79,6 +79,13 @@ namespace RoomAliveToolkit
         }
 
         [OperationContract]
+        public void DisplayColorImage(int screenIndex, byte[] data)
+        {
+            var projectorForm = projectorForms[screenIndex];
+            projectorForm.DisplayColorImage(data);
+        }
+
+        [OperationContract]
         public void CloseDisplay(int screenIndex)
         {
             if (projectorForms.ContainsKey(screenIndex))
@@ -89,13 +96,7 @@ namespace RoomAliveToolkit
             }
         }
 
-        [OperationContract]
-        public void DisplayColorImage(int screenIndex, byte[] data)
-        {
-            var projectorForm = projectorForms[screenIndex];
-            
 
-        }
     }
 
 

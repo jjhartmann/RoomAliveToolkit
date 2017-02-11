@@ -53,7 +53,10 @@ public interface ProjectorServer
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ProjectorServer/DisplayGrayCode", ReplyAction="http://tempuri.org/ProjectorServer/DisplayGrayCodeResponse")]
     void DisplayGrayCode(int screenIndex, int i);
-    
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ProjectorServer/DisplayColorImage", ReplyAction = "http://tempuri.org/ProjectorServer/DisplayColorImageResponse")]
+    void DisplayColorImage(int screenIndex, byte[] data);
+
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ProjectorServer/DisplayGrayCode", ReplyAction="http://tempuri.org/ProjectorServer/DisplayGrayCodeResponse")]
     System.Threading.Tasks.Task DisplayGrayCodeAsync(int screenIndex, int i);
     
